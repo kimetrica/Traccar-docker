@@ -1,9 +1,9 @@
 FROM java:7
 
 # get, unzip, remove in one RUN directive, to reduce image size / number of layers
-ADD traccar-linux-64-3.2.zip /traccar-linux-64-3.2.zip
-RUN unzip traccar-linux-64-3.2.zip \
-&& rm traccar-linux-64-3.2.zip \
+ADD traccar-linux-64-3.3.zip /traccar-linux-64-3.3.zip
+RUN unzip traccar-linux-64-3.3.zip \
+&& rm traccar-linux-64-3.3.zip \
 && ./traccar.run \
 && rm traccar.run
 
