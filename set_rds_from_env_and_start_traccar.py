@@ -9,7 +9,8 @@ with open('/opt/traccar/conf/traccar.xml') as f:
 with open('/opt/traccar/conf/traccar.xml', 'w') as f:
     f.write(traccar_xml.format(
         POSTGRES_HOSTNAME=os.environ['POSTGRES_HOSTNAME'],
-        POSTGRES_USERNAME=os.environ['POSTGRES_USERNAME'],
+        POSTGRES_DB=os.environ['POSTGRES_DB'],
+        POSTGRES_USER=os.environ['POSTGRES_USER'],
         POSTGRES_PASSWORD=os.environ['POSTGRES_PASSWORD']))
 
 os.system('/opt/traccar/bin/traccar start && tail -F /opt/traccar/logs/tracker'

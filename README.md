@@ -4,7 +4,8 @@ To avoid having to hardcode the values in the configuration, the Docker image al
 The variable names are:
 
 * POSTGRES_HOSTNAME
-* POSTGRES_USERNAME
+* POSTGRES_DB
+* POSTGRES_USER
 * POSTGRES_PASSWORD
 
-The repo contains a traccar package that has been modified to extract additional tags from the data submitted by Galileo devices, but should work like a current github checkout of Traccar otherwise.
+The repo contains a traccar package that has been modified to extract additional tags from the data submitted by Galileo devices, but should work like a recent github checkout of Traccar otherwise.

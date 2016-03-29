@@ -10,6 +10,9 @@
     <entry key='web.port'>8082</entry>
     <entry key='web.path'>/opt/traccar/web</entry>
 
+    <!--  websocket timeout -->
+    <entry key='web.timeout'>3600000</entry>
+
     <entry key='geocoder.enable'>true</entry>
     <entry key='geocoder.type'>google</entry>
 
@@ -20,8 +23,8 @@
     <!-- DATABASE CONFIG -->
 
     <entry key='database.driver'>org.postgresql.Driver</entry>
-    <entry key='database.url'>jdbc:postgresql://{POSTGRES_HOSTNAME}:5432/traccar</entry>
-    <entry key='database.user'>{POSTGRES_USERNAME}</entry>
+    <entry key='database.url'>jdbc:postgresql://{POSTGRES_HOSTNAME}:5432/{POSTGRES_DB}</entry>
+    <entry key='database.user'>{POSTGRES_USER}</entry>
     <entry key='database.password'>{POSTGRES_PASSWORD}</entry>
 
     <entry key='database.changelog'>/opt/traccar/data/changelog-master.xml</entry>
